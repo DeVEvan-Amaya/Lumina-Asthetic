@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
@@ -68,9 +68,21 @@
     <header class="header" id="header" role="banner">
         <div class="container header__container">
             <!-- Logo -->
-            <a href="#" class="header__logo" aria-label="Lumina Aesthetic - Inicio">
-                <span class="logo__text">Lumina</span>
-                <span class="logo__accent">Aesthetic</span>
+            <a href="#" class="header__logo" aria-label="Lumina Esthetic - Inicio">
+                <svg class="logo__icon" width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- Geometric Star Logo -->
+                    <polygon points="50,5 61,35 95,35 68,55 79,90 50,70 21,90 32,55 5,35 39,35" stroke-linejoin="round"/>
+                    <polygon points="50,20 58,40 80,40 63,53 70,75 50,62 30,75 37,53 20,40 42,40" stroke-linejoin="round"/>
+                    <line x1="50" y1="5" x2="50" y2="20"/>
+                    <line x1="95" y1="35" x2="80" y2="40"/>
+                    <line x1="79" y1="90" x2="70" y2="75"/>
+                    <line x1="21" y1="90" x2="30" y2="75"/>
+                    <line x1="5" y1="35" x2="20" y2="40"/>
+                </svg>
+                <div class="logo__text-wrapper">
+                    <span class="logo__text">LUMINA</span>
+                    <span class="logo__subtext">ESTHETIC</span>
+                </div>
             </a>
 
             <!-- Navigation -->
@@ -118,21 +130,29 @@
             </div>
             <div class="container hero__container">
                 <div class="hero__content">
-                    <span class="hero__subtitle animate-fade-up">Bienvenido a</span>
+                    <span class="hero__subtitle animate-fade-up">Medicina Estética en Polanco</span>
                     <h1 class="hero__title animate-fade-up" id="hero-title">
-                        Tu Espacio de <em>Belleza</em> y Bienestar
+                        Rejuvenece <em>10 años</em> sin cirugía
                     </h1>
                     <p class="hero__description animate-fade-up">
-                        Descubre tratamientos personalizados con tecnología de vanguardia.
-                        Porque tu piel merece lo mejor.
+                        Tratamientos con la Dra. Valentina Reyes. Más de 4,200 procedimientos
+                        exitosos desde 2015. Resultados naturales, sin tiempo de recuperación.
                     </p>
                     <div class="hero__actions animate-fade-up">
                         <a href="#servicios" class="btn btn--primary btn--large">
-                            Explorar Servicios
+                            Ver Tratamientos
                         </a>
                         <a href="#contacto" class="btn btn--outline btn--large">
-                            Agendar Consulta
+                            Valoración Gratuita
                         </a>
+                    </div>
+                    <div class="hero__trust animate-fade-up">
+                        <span class="hero__trust-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            4.9 en Google (127 reseñas)
+                        </span>
+                        <span class="hero__trust-divider">|</span>
+                        <span class="hero__trust-item">Certificados COFEPRIS</span>
                     </div>
                 </div>
                 <div class="hero__scroll-indicator" aria-hidden="true">
@@ -152,7 +172,7 @@
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             </svg>
                         </span>
-                        <span class="features-bar__text">Tratamientos Certificados</span>
+                        <span class="features-bar__text">Registro COFEPRIS</span>
                     </li>
                     <li class="features-bar__item">
                         <span class="features-bar__icon" aria-hidden="true">
@@ -161,7 +181,7 @@
                                 <path d="M12 6v6l4 2"/>
                             </svg>
                         </span>
-                        <span class="features-bar__text">+10 Años de Experiencia</span>
+                        <span class="features-bar__text">Desde 2015 en Polanco</span>
                     </li>
                     <li class="features-bar__item">
                         <span class="features-bar__icon" aria-hidden="true">
@@ -169,7 +189,7 @@
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                             </svg>
                         </span>
-                        <span class="features-bar__text">+5,000 Clientes Felices</span>
+                        <span class="features-bar__text">4,200+ Tratamientos</span>
                     </li>
                     <li class="features-bar__item">
                         <span class="features-bar__icon" aria-hidden="true">
@@ -177,7 +197,7 @@
                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                             </svg>
                         </span>
-                        <span class="features-bar__text">Tecnología de Vanguardia</span>
+                        <span class="features-bar__text">Láser Candela GentleMax</span>
                     </li>
                 </ul>
             </div>
@@ -187,13 +207,13 @@
         <section class="services" id="servicios" aria-labelledby="services-title">
             <div class="container">
                 <header class="section-header">
-                    <span class="section-header__label">Nuestros Servicios</span>
+                    <span class="section-header__label">Tratamientos</span>
                     <h2 class="section-header__title" id="services-title">
-                        Tratamientos <em>Exclusivos</em>
+                        Procedimientos <em>sin cirugía</em>
                     </h2>
                     <p class="section-header__description">
-                        Cada tratamiento está diseñado para realzar tu belleza natural
-                        con los más altos estándares de calidad.
+                        Todos los tratamientos incluyen valoración previa gratuita.
+                        Precios finales, sin costos ocultos. Financiamiento disponible.
                     </p>
                 </header>
 
@@ -206,19 +226,19 @@
                                 <path d="M12 44c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Tratamientos Faciales</h3>
+                        <h3 class="service-card__title">Limpieza Facial Profunda</h3>
                         <p class="service-card__description">
-                            Limpieza profunda, hidratación y rejuvenecimiento con técnicas avanzadas
-                            para una piel radiante.
+                            Eliminación de impurezas, puntos negros y células muertas.
+                            Incluye extracción manual y mascarilla personalizada.
                         </p>
                         <ul class="service-card__features">
-                            <li>Hidrafacial</li>
-                            <li>Microdermoabrasión</li>
-                            <li>Peeling Químico</li>
+                            <li>HydraFacial MD - $1,800</li>
+                            <li>Limpieza Profunda - $950</li>
+                            <li>Peeling Químico - $1,200</li>
                         </ul>
-                        <span class="service-card__price">Desde $80</span>
+                        <span class="service-card__price">45-60 min por sesión</span>
                         <a href="#contacto" class="service-card__link">
-                            Más información
+                            Agendar cita
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M3 8h10M9 4l4 4-4 4"/>
                             </svg>
@@ -227,7 +247,7 @@
 
                     <!-- Service Card 2 -->
                     <article class="service-card service-card--featured" data-animate>
-                        <span class="service-card__badge">Popular</span>
+                        <span class="service-card__badge">Más Solicitado</span>
                         <div class="service-card__icon">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
@@ -235,19 +255,19 @@
                                 <circle cx="24" cy="24" r="16"/>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Medicina Estética</h3>
+                        <h3 class="service-card__title">Toxina Botulínica</h3>
                         <p class="service-card__description">
-                            Procedimientos mínimamente invasivos realizados por especialistas
-                            certificados para resultados naturales.
+                            Reducción de arrugas de expresión en frente, entrecejo y patas de gallo.
+                            Aplicación por la Dra. Reyes. Resultados en 3-5 días.
                         </p>
                         <ul class="service-card__features">
-                            <li>Botox y Rellenos</li>
-                            <li>Mesoterapia</li>
-                            <li>Plasma Rico en Plaquetas</li>
+                            <li>Entrecejo - $3,500</li>
+                            <li>Frente completa - $5,500</li>
+                            <li>Full Face - $8,500</li>
                         </ul>
-                        <span class="service-card__price">Desde $200</span>
+                        <span class="service-card__price">Duración: 4-6 meses</span>
                         <a href="#contacto" class="service-card__link">
-                            Más información
+                            Agendar valoración
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M3 8h10M9 4l4 4-4 4"/>
                             </svg>
@@ -262,19 +282,19 @@
                                 <ellipse cx="24" cy="24" rx="12" ry="20"/>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Tratamientos Corporales</h3>
+                        <h3 class="service-card__title">Rellenos con Ácido Hialurónico</h3>
                         <p class="service-card__description">
-                            Moldea y tonifica tu cuerpo con tecnología no invasiva
-                            y resultados visibles desde la primera sesión.
+                            Restauración de volumen facial, perfilado de labios y corrección
+                            de surcos nasogenianos. Producto Juvéderm certificado.
                         </p>
                         <ul class="service-card__features">
-                            <li>Criolipólisis</li>
-                            <li>Radiofrecuencia</li>
-                            <li>Drenaje Linfático</li>
+                            <li>Labios - $6,500</li>
+                            <li>Surcos - $7,500</li>
+                            <li>Pómulos - $9,000</li>
                         </ul>
-                        <span class="service-card__price">Desde $120</span>
+                        <span class="service-card__price">Duración: 12-18 meses</span>
                         <a href="#contacto" class="service-card__link">
-                            Más información
+                            Agendar valoración
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M3 8h10M9 4l4 4-4 4"/>
                             </svg>
@@ -289,19 +309,19 @@
                                 <path d="M24 12v12M18 18h12"/>
                             </svg>
                         </div>
-                        <h3 class="service-card__title">Depilación Láser</h3>
+                        <h3 class="service-card__title">Depilación Láser Definitiva</h3>
                         <p class="service-card__description">
-                            Elimina el vello no deseado de forma permanente con
-                            tecnología láser de última generación.
+                            Equipo Candela GentleMax Pro. Seguro para todo tipo de piel.
+                            Incluye gel post-tratamiento y seguimiento.
                         </p>
                         <ul class="service-card__features">
-                            <li>Láser Alejandrita</li>
-                            <li>Láser Diodo</li>
-                            <li>Zonas Pequeñas y Grandes</li>
+                            <li>Axilas - $850/sesión</li>
+                            <li>Bikini - $1,200/sesión</li>
+                            <li>Piernas completas - $2,800</li>
                         </ul>
-                        <span class="service-card__price">Desde $50</span>
+                        <span class="service-card__price">Paquete 6 sesiones -20%</span>
                         <a href="#contacto" class="service-card__link">
-                            Más información
+                            Ver paquetes
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M3 8h10M9 4l4 4-4 4"/>
                             </svg>
@@ -322,38 +342,33 @@
             <div class="container about__container">
                 <div class="about__image-wrapper" data-animate>
                     <div class="about__image">
-                        <div class="about__image-placeholder">
-                            <!-- Placeholder for actual image -->
-                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1">
-                                <rect x="10" y="10" width="100" height="100" rx="8"/>
-                                <circle cx="45" cy="45" r="15"/>
-                                <path d="M10 85l25-25 20 20 30-35 25 30"/>
-                            </svg>
-                        </div>
+                        <!-- Image placeholder - would be replaced with real photo -->
                     </div>
                     <div class="about__accent-box">
-                        <span class="about__accent-number">10+</span>
-                        <span class="about__accent-text">Años de Excelencia</span>
+                        <span class="about__accent-number">9</span>
+                        <span class="about__accent-text">Años en Polanco</span>
                     </div>
                 </div>
 
                 <div class="about__content" data-animate>
                     <header class="section-header section-header--left">
-                        <span class="section-header__label">Sobre Nosotros</span>
+                        <span class="section-header__label">Nuestra Historia</span>
                         <h2 class="section-header__title" id="about-title">
-                            Donde la Ciencia se Une con la <em>Belleza</em>
+                            De un consultorio pequeño a <em>referente</em> en la zona
                         </h2>
                     </header>
 
                     <p class="about__text">
-                        En Lumina Aesthetic, creemos que cada persona merece sentirse segura
-                        y radiante en su propia piel. Nuestro equipo de especialistas combina
-                        conocimiento científico con un enfoque personalizado.
+                        En 2015, después de 6 años trabajando en el Hospital Ángeles,
+                        la Dra. Valentina Reyes decidió abrir su propio espacio. La idea era simple:
+                        ofrecer medicina estética con los estándares de un hospital, pero en un
+                        ambiente cálido y sin las prisas de una clínica masiva.
                     </p>
 
                     <p class="about__text">
-                        Utilizamos únicamente tecnología certificada y productos de primera
-                        calidad para garantizar resultados excepcionales y seguros.
+                        Hoy, con un equipo de 4 especialistas y más de 4,200 tratamientos realizados,
+                        seguimos con la misma filosofía: cada paciente es único, y cada tratamiento
+                        se planea específicamente para sus necesidades y expectativas.
                     </p>
 
                     <ul class="about__values">
@@ -363,7 +378,7 @@
                                     <polyline points="20 6 9 17 4 12"/>
                                 </svg>
                             </span>
-                            <span>Profesionales Certificados</span>
+                            <span>Dra. Valentina Reyes - Directora Médica (Ced. Prof. 8741256)</span>
                         </li>
                         <li class="about__value">
                             <span class="about__value-icon">
@@ -371,7 +386,7 @@
                                     <polyline points="20 6 9 17 4 12"/>
                                 </svg>
                             </span>
-                            <span>Tecnología de Última Generación</span>
+                            <span>Registro Sanitario COFEPRIS: 19-AM-09-024-0012</span>
                         </li>
                         <li class="about__value">
                             <span class="about__value-icon">
@@ -379,7 +394,7 @@
                                     <polyline points="20 6 9 17 4 12"/>
                                 </svg>
                             </span>
-                            <span>Atención Personalizada</span>
+                            <span>Productos Allergan (Botox), Galderma (Restylane), Candela (Láser)</span>
                         </li>
                         <li class="about__value">
                             <span class="about__value-icon">
@@ -387,12 +402,12 @@
                                     <polyline points="20 6 9 17 4 12"/>
                                 </svg>
                             </span>
-                            <span>Resultados Garantizados</span>
+                            <span>Financiamiento hasta 12 MSI con tarjetas participantes</span>
                         </li>
                     </ul>
 
                     <a href="#contacto" class="btn btn--primary">
-                        Conoce al Equipo
+                        Agendar Valoración Gratuita
                     </a>
                 </div>
             </div>
@@ -402,9 +417,9 @@
         <section class="testimonials" id="testimonios" aria-labelledby="testimonials-title">
             <div class="container">
                 <header class="section-header">
-                    <span class="section-header__label">Testimonios</span>
+                    <span class="section-header__label">Reseñas verificadas</span>
                     <h2 class="section-header__title" id="testimonials-title">
-                        Lo Que Dicen Nuestros <em>Clientes</em>
+                        Lo que dicen en <em>Google</em>
                     </h2>
                 </header>
 
@@ -420,40 +435,42 @@
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                             </div>
                             <blockquote class="testimonial-card__quote">
-                                "Increíble experiencia. El equipo es muy profesional y los resultados
-                                superaron mis expectativas. Mi piel nunca se había visto tan bien."
+                                "Tenía las líneas de expresión muy marcadas en la frente desde los 35.
+                                La Dra. Valentina me aplicó botox y el resultado fue muy natural, no se ve
+                                'congelado'. Ya llevo 2 años viniendo cada 5 meses."
                             </blockquote>
                             <footer class="testimonial-card__author">
                                 <div class="testimonial-card__avatar">
-                                    <span>MC</span>
+                                    <span>MR</span>
                                 </div>
                                 <div class="testimonial-card__info">
-                                    <cite class="testimonial-card__name">María Carla</cite>
-                                    <span class="testimonial-card__service">Tratamiento Facial Premium</span>
+                                    <cite class="testimonial-card__name">Marcela Ruiz</cite>
+                                    <span class="testimonial-card__service">Toxina Botulínica • Octubre 2024</span>
                                 </div>
                             </footer>
                         </article>
 
                         <!-- Testimonial 2 -->
                         <article class="testimonial-card" data-animate>
-                            <div class="testimonial-card__rating" aria-label="5 de 5 estrellas">
+                            <div class="testimonial-card__rating" aria-label="4 de 5 estrellas">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" opacity="0.3"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                             </div>
                             <blockquote class="testimonial-card__quote">
-                                "Llevo 6 meses con mis tratamientos de medicina estética y estoy
-                                encantada. Resultados naturales y un equipo que te hace sentir en confianza."
+                                "La depilación láser funciona muy bien. El único 'pero' es que el estacionamiento
+                                es complicado (mejor lleguen en Uber). Del tratamiento: 6 sesiones y ya no tengo
+                                vello en axilas. 100% recomendado."
                             </blockquote>
                             <footer class="testimonial-card__author">
                                 <div class="testimonial-card__avatar">
-                                    <span>AP</span>
+                                    <span>KG</span>
                                 </div>
                                 <div class="testimonial-card__info">
-                                    <cite class="testimonial-card__name">Ana Patricia</cite>
-                                    <span class="testimonial-card__service">Medicina Estética</span>
+                                    <cite class="testimonial-card__name">Karla Gómez</cite>
+                                    <span class="testimonial-card__service">Depilación Láser • Agosto 2024</span>
                                 </div>
                             </footer>
                         </article>
@@ -468,16 +485,17 @@
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><polygon points="10 1 13 7 19 8 14.5 12.5 15.5 19 10 16 4.5 19 5.5 12.5 1 8 7 7"/></svg>
                             </div>
                             <blockquote class="testimonial-card__quote">
-                                "La depilación láser fue rápida y efectiva. Después de 5 sesiones,
-                                los resultados son permanentes. Totalmente recomendado."
+                                "Me hice relleno de labios por primera vez y estaba muerta de miedo.
+                                La Dra. me explicó todo el proceso, usó anestesia tópica y casi no sentí nada.
+                                El resultado es sutil, que era lo que quería. Mis amigas no notan qué cambié, solo que me veo mejor."
                             </blockquote>
                             <footer class="testimonial-card__author">
                                 <div class="testimonial-card__avatar">
-                                    <span>LM</span>
+                                    <span>PV</span>
                                 </div>
                                 <div class="testimonial-card__info">
-                                    <cite class="testimonial-card__name">Laura Méndez</cite>
-                                    <span class="testimonial-card__service">Depilación Láser</span>
+                                    <cite class="testimonial-card__name">Paola Vázquez</cite>
+                                    <span class="testimonial-card__service">Relleno de Labios • Septiembre 2024</span>
                                 </div>
                             </footer>
                         </article>
@@ -530,8 +548,8 @@
                                 </svg>
                             </span>
                             <div>
-                                <strong>Dirección</strong>
-                                <span>Av. Principal 123, Ciudad</span>
+                                <strong>Ubicación</strong>
+                                <span>Av. Presidente Masaryk 210, Int. 403<br>Polanco V Sección, 11560 CDMX</span>
                             </div>
                         </li>
                         <li class="contact__detail">
@@ -541,8 +559,8 @@
                                 </svg>
                             </span>
                             <div>
-                                <strong>Teléfono</strong>
-                                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                                <strong>WhatsApp / Teléfono</strong>
+                                <a href="tel:+5215541892634">55 4189 2634</a>
                             </div>
                         </li>
                         <li class="contact__detail">
@@ -553,8 +571,8 @@
                                 </svg>
                             </span>
                             <div>
-                                <strong>Email</strong>
-                                <a href="mailto:info@luminaesthetic.com">info@luminaesthetic.com</a>
+                                <strong>Correo</strong>
+                                <a href="mailto:citas@luminaesthetic.mx">citas@luminaesthetic.mx</a>
                             </div>
                         </li>
                         <li class="contact__detail">
@@ -565,8 +583,8 @@
                                 </svg>
                             </span>
                             <div>
-                                <strong>Horario</strong>
-                                <span>Lun - Sab: 9:00 - 20:00</span>
+                                <strong>Horario de atención</strong>
+                                <span>Lun - Vie: 10:00 - 19:00<br>Sábados: 10:00 - 14:00</span>
                             </div>
                         </li>
                     </ul>
@@ -698,8 +716,19 @@
                 <!-- Brand Column -->
                 <div class="footer__brand">
                     <a href="#" class="footer__logo">
-                        <span class="logo__text">Lumina</span>
-                        <span class="logo__accent">Aesthetic</span>
+                        <svg class="logo__icon" width="36" height="36" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="50,5 61,35 95,35 68,55 79,90 50,70 21,90 32,55 5,35 39,35" stroke-linejoin="round"/>
+                            <polygon points="50,20 58,40 80,40 63,53 70,75 50,62 30,75 37,53 20,40 42,40" stroke-linejoin="round"/>
+                            <line x1="50" y1="5" x2="50" y2="20"/>
+                            <line x1="95" y1="35" x2="80" y2="40"/>
+                            <line x1="79" y1="90" x2="70" y2="75"/>
+                            <line x1="21" y1="90" x2="30" y2="75"/>
+                            <line x1="5" y1="35" x2="20" y2="40"/>
+                        </svg>
+                        <div class="logo__text-wrapper">
+                            <span class="logo__text">LUMINA</span>
+                            <span class="logo__subtext">ESTHETIC</span>
+                        </div>
                     </a>
                     <p class="footer__tagline">
                         Tu destino de belleza y bienestar. Donde la ciencia
@@ -753,10 +782,10 @@
                 <div class="footer__contact">
                     <h4 class="footer__title">Contacto</h4>
                     <address class="footer__address">
-                        <p>Av. Principal 123</p>
-                        <p>Ciudad, País</p>
-                        <p><a href="tel:+12345678900">+1 (234) 567-8900</a></p>
-                        <p><a href="mailto:info@luminaesthetic.com">info@luminaesthetic.com</a></p>
+                        <p>Av. Pdte. Masaryk 210, Int. 403</p>
+                        <p>Polanco V Secc., 11560 CDMX</p>
+                        <p><a href="tel:+5215541892634">55 4189 2634</a></p>
+                        <p><a href="mailto:citas@luminaesthetic.mx">citas@luminaesthetic.mx</a></p>
                     </address>
                 </div>
             </div>
