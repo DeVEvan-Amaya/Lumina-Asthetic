@@ -616,6 +616,33 @@ address {
     gap: var(--space-4);
 }
 
+/* Hero Trust Badges */
+.hero__trust {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero__trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero__trust-item svg {
+    color: #fbbf24;
+}
+
+.hero__trust-divider {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Scroll Indicator */
 .hero__scroll-indicator {
     display: none;
