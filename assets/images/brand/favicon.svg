@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8c5d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8a9bb0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#1a2744"/>
+  <!-- Outer geometric star -->
+  <polygon
+    points="50,8 59,32 85,32 64,48 73,75 50,58 27,75 36,48 15,32 41,32"
+    fill="none"
+    stroke="url(#starGrad)"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <!-- Inner geometric star -->
+  <polygon
+    points="50,22 56,38 73,38 60,48 65,65 50,54 35,65 40,48 27,38 44,38"
+    fill="none"
+    stroke="url(#starGrad)"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+  <!-- Connecting lines -->
+  <line x1="50" y1="8" x2="50" y2="22" stroke="url(#starGrad)" stroke-width="1.5"/>
+  <line x1="85" y1="32" x2="73" y2="38" stroke="url(#starGrad)" stroke-width="1.5"/>
+  <line x1="73" y1="75" x2="65" y2="65" stroke="url(#starGrad)" stroke-width="1.5"/>
+  <line x1="27" y1="75" x2="35" y2="65" stroke="url(#starGrad)" stroke-width="1.5"/>
+  <line x1="15" y1="32" x2="27" y2="38" stroke="url(#starGrad)" stroke-width="1.5"/>
+</svg>
