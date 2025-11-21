@@ -14,24 +14,24 @@
    ============================================================================ */
 :root {
     /* === COLORS === */
-    /* Primary Palette */
-    --color-primary: #1a1a1a;
-    --color-primary-light: #333333;
-    --color-primary-dark: #000000;
+    /* Primary Palette - Navy Blue (Brand) */
+    --color-primary: #1a2744;
+    --color-primary-light: #2a3a5c;
+    --color-primary-dark: #0f1829;
 
     /* Secondary (Background) */
-    --color-secondary: #f8f5f2;
-    --color-secondary-dark: #efe9e4;
+    --color-secondary: #f7f9fc;
+    --color-secondary-dark: #e8edf5;
 
-    /* Accent Colors */
-    --color-accent: #c9a959;
-    --color-accent-light: #d4b96a;
-    --color-accent-dark: #b89a48;
+    /* Accent Colors - Silver/Platinum */
+    --color-accent: #b8c5d6;
+    --color-accent-light: #d4dde8;
+    --color-accent-dark: #8fa3bd;
 
     /* Supporting Colors */
-    --color-rose: #d4a5a5;
-    --color-rose-light: #e5c4c4;
-    --color-success: #7d9471;
+    --color-silver: #c0c8d1;
+    --color-silver-light: #e5e9ee;
+    --color-success: #4a7c59;
     --color-error: #c45c5c;
 
     /* Neutral Scale */
@@ -49,7 +49,7 @@
     --color-black: #000000;
 
     /* === TYPOGRAPHY === */
-    --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
     /* Font Sizes (Mobile First - Base 16px) */
@@ -117,7 +117,7 @@
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-    --shadow-glow: 0 0 20px rgb(201 169 89 / 0.3);
+    --shadow-glow: 0 0 20px rgb(26 39 68 / 0.3);
 
     /* === TRANSITIONS === */
     --transition-fast: 150ms ease;
@@ -328,6 +328,30 @@ address {
     transform: translateY(-2px);
 }
 
+/* Hero buttons (on dark background) */
+.hero .btn--primary {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+}
+
+.hero .btn--primary:hover {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+    color: var(--color-primary);
+}
+
+.hero .btn--outline {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.hero .btn--outline:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
 .btn--large {
     padding: var(--space-4) var(--space-8);
     font-size: var(--text-base);
@@ -367,23 +391,40 @@ address {
 .header__logo,
 .footer__logo {
     display: flex;
-    align-items: baseline;
-    gap: var(--space-1);
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.logo__icon {
+    color: var(--color-primary);
+    transition: transform var(--transition-base);
+}
+
+.header__logo:hover .logo__icon {
+    transform: rotate(15deg);
+}
+
+.logo__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
 }
 
 .logo__text {
     font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    font-weight: var(--font-semibold);
+    font-size: var(--text-lg);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--tracking-widest);
     color: var(--color-primary);
 }
 
-.logo__accent {
+.logo__subtext {
     font-family: var(--font-heading);
-    font-size: var(--text-lg);
+    font-size: var(--text-xs);
     font-weight: var(--font-regular);
-    font-style: italic;
-    color: var(--color-accent);
+    letter-spacing: 0.25em;
+    color: var(--color-accent-dark);
+    margin-top: 2px;
 }
 
 /* Navigation */
@@ -514,13 +555,16 @@ address {
 .hero__background {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 50%, var(--color-rose-light) 100%);
+    background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(201, 169, 89, 0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(26, 39, 68, 0.85) 0%, rgba(26, 39, 68, 0.7) 50%, rgba(26, 39, 68, 0.6) 100%);
 }
 
 .hero__container {
@@ -542,7 +586,7 @@ address {
     font-weight: var(--font-medium);
     letter-spacing: var(--tracking-widest);
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-accent-light);
     margin-bottom: var(--space-4);
 }
 
@@ -551,11 +595,17 @@ address {
     font-weight: var(--font-semibold);
     line-height: var(--leading-tight);
     margin-bottom: var(--space-6);
+    color: var(--color-white);
+}
+
+.hero__title em {
+    color: var(--color-accent-light);
+    font-style: normal;
 }
 
 .hero__description {
     font-size: var(--text-lg);
-    color: var(--color-gray-600);
+    color: rgba(255, 255, 255, 0.85);
     line-height: var(--leading-relaxed);
     margin-bottom: var(--space-8);
 }
@@ -777,7 +827,9 @@ address {
 .about__image {
     position: relative;
     aspect-ratio: 4/5;
-    background: var(--color-gray-200);
+    background-image: url('https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&q=80');
+    background-size: cover;
+    background-position: center;
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
@@ -795,8 +847,8 @@ address {
     bottom: -20px;
     right: -20px;
     padding: var(--space-6);
-    background: var(--color-accent);
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-white);
     border-radius: var(--radius-lg);
     text-align: center;
     box-shadow: var(--shadow-xl);
@@ -1224,8 +1276,16 @@ address {
     margin-bottom: var(--space-4);
 }
 
+.footer__logo .logo__icon {
+    color: var(--color-accent-light);
+}
+
 .footer__logo .logo__text {
     color: var(--color-white);
+}
+
+.footer__logo .logo__subtext {
+    color: var(--color-accent-light);
 }
 
 .footer__tagline {
