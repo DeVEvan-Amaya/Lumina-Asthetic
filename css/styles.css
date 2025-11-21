@@ -861,6 +861,22 @@ address {
     overflow: hidden;
 }
 
+.about__image--brand {
+    background-image: none;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-8);
+}
+
+.about__brand-logo {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+}
+
 .about__image-placeholder {
     display: flex;
     align-items: center;
